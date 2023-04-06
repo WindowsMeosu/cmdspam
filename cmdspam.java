@@ -29,7 +29,7 @@ public static void main(String[] args) {
     try {
       FileWriter myWriter = new FileWriter("spam.bat");
       myWriter.write(":q");
-      myWriter.write("echo @off \n "  + command1);
+      myWriter.write("\n @echo off \n "  + command1);
       myWriter.write("\n echo command2 in progress \n " + command2);
       myWriter.write("\n echo command3 in progress \n " + command3);
       myWriter.write("\n echo command4 in progress \n " + command4);
